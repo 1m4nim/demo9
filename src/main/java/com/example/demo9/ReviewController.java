@@ -62,7 +62,7 @@ public class ReviewController {
 		Review r = new Review();
 		r.setRestaurantId(form.getRestaurantId());
 		r.setUserId(form.getUserId());
-		r.LocalDate(form.getVisitDate());
+		r.setVisitDate(form.getVisitDate());
 		r.setRating(form.getRating());
 		r.setComment(form.getComment());
 		service.regist(r);
